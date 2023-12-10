@@ -2,14 +2,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    tools:context=".FeedbackForm">
 
     <!-- Feedback Form Heading -->
     <TextView
         android:id="@+id/feedbackHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Feedback Form"
+        android:text="@string/feedback_form"
         android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="#000000"
@@ -29,14 +31,14 @@
             android:id="@+id/editTextFeedback"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:hint="Enter your feedback here"
+            android:hint="@string/enter_feedback_"
             android:inputType="textMultiLine"
             android:minLines="4"
             android:gravity="top"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Ratings (Place your rating views here) -->
-    <!-- For example, you can use RatingBar -->
+
     <RatingBar
         android:id="@+id/ratingBar"
         android:layout_width="wrap_content"
@@ -50,7 +52,7 @@
         android:id="@+id/btnSubmitFeedback"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Submit Feedback"
+        android:text="@string/submit_feedback"
         android:background="@drawable/rounded_button"
         android:layout_below="@+id/ratingBar"
         android:layout_marginTop="250dp"

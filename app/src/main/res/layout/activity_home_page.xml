@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomePageActivity">
+
+    <!-- Toolbar Section -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+        <!-- Navigation Icon (Hamburger) -->
+        <ImageView
+            android:id="@+id/toolbarNavIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_name_hamburger"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_gravity="start"/>
+
+        <!-- App Name -->
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jal_sahay"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Middle Section -->
+
+    <LinearLayout
+        android:id="@+id/middleSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    </LinearLayout>
+    <!-- About Section -->
+    <LinearLayout
+        android:id="@+id/aboutSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/toolbar"
+        android:padding="16dp">
+
+        <!-- About Text -->
+        <TextView
+            android:id="@+id/tvAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- About Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                style="@style/Widget.AppCompat.ButtonBar"
+                android:id="@+id/btnRegistered"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/registered"
+                android:padding="8dp"/>
+
+            <Button
+                style="@style/Widget.AppCompat.ButtonBar"
+                android:id="@+id/btnSolved"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/solved"
+                android:padding="8dp"/>
+
+            <Button
+                style="@style/Widget.AppCompat.ButtonBar"
+                android:id="@+id/btnPending"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pending"
+                android:padding="8dp"/>
+
+            <Button
+                android:id="@+id/btnCancelled"
+                style="@style/Widget.AppCompat.ButtonBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancelled"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+
+
+        <!-- Categories Section -->
+        <TextView
+            android:id="@+id/tvCategories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/categories"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"/>
+
+        <!-- Categories Section -->
+        <GridLayout
+            android:id="@+id/categoriesSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false">
+
+            <!-- Category 1 -->
+            <LinearLayout
+                android:id="@+id/category1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageButton
+                    style="@style/Widget.AppCompat.ButtonBar"
+                    android:id="@+id/btnFloods"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/floods"
+                    android:scaleType="fitCenter"
+                    android:background="?android:selectableItemBackground"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/floods"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Category 2 -->
+            <!-- Add similar layouts for other categories -->
+
+            <LinearLayout
+                android:id="@+id/category2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageButton
+                    style="@style/Widget.AppCompat.ButtonBar"
+                    android:id="@+id/btnPotholes"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/potholes"
+                    android:scaleType="fitCenter"
+                    android:background="?android:selectableItemBackground"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/potholes"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Add similar layouts for other categories -->
+            <LinearLayout
+                android:id="@+id/category3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageButton
+                    style="@style/Widget.AppCompat.ButtonBar"
+                    android:id="@+id/btnPipeline"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/pipeline"
+                    android:scaleType="fitCenter"
+                    android:background="?android:selectableItemBackground"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pipeline"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/category4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageButton
+                    style="@style/Widget.AppCompat.ButtonBar"
+                    android:id="@+id/btnDrainage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/drainage"
+                    android:scaleType="fitCenter"
+                    android:background="?android:selectableItemBackground"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/drainage"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+
+
+        </GridLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <!-- Footer Section -->
+    <!-- Footer Section -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/footerCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:id="@+id/footerSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Footer Buttons -->
+            <Button
+                style="@style/Widget.AppCompat.ButtonBar"
+                android:id="@+id/btnHome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/home"
+                android:textStyle="bold"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:drawableTop="@drawable/ic_action_name_home"
+                android:padding="8dp"/>
+
+            <Button
+                style="@style/Widget.AppCompat.ButtonBar"
+                android:id="@+id/btnMap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="@string/map"
+                android:drawableTop="@drawable/ic_action_name_map"
+                android:padding="8dp"/>
+
+            <Button
+                style="@style/Widget.AppCompat.ButtonBar"
+                android:id="@+id/btnCamera"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/camera"
+                android:drawableTop="@drawable/ic_action_name_camera"
+                android:backgroundTint="@color/white"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:padding="8dp"/>
+
+            <Button
+                style="@style/Widget.AppCompat.ButtonBar"
+                android:id="@+id/btnProfile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/profile"
+                android:textStyle="bold"
+                android:drawableTop="@drawable/ic_action_name_profile"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
