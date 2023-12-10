@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#87CEEB">
+
+    <!-- App Logo Centered -->
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/disastermanagement"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- User Login Button -->
+    <Button
+        android:id="@+id/btnUserLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Login"
+        android:backgroundTint="@drawable/rounded_button"
+        android:layout_below="@+id/appLogo"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Employee Login Button -->
+    <Button
+        android:id="@+id/btnEmployeeLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee Login"
+        android:textSize="24sp"
+        android:backgroundTint="@drawable/rounded_button"
+        android:layout_below="@+id/btnUserLogin"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
