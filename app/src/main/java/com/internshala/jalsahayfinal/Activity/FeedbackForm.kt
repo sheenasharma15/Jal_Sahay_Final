@@ -1,7 +1,8 @@
-package com.internshala.jalsahayfinal
+package com.internshala.jalsahayfinal.Activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.internshala.jalsahayfinal.R
 
 class FeedbackForm : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

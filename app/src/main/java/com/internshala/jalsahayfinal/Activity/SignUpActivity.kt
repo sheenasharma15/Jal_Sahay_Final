@@ -1,9 +1,10 @@
-package com.internshala.jalsahayfinal
+package com.internshala.jalsahayfinal.Activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.internshala.jalsahayfinal.R
 
 class SignUpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

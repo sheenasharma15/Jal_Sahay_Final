@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:padding="16dp"
     android:background="@drawable/bluebackground"
-    tools:context=".MainActivity"
+    tools:context=".Activity.MainActivity"
     android:orientation="vertical">
 
 
@@ -31,7 +31,7 @@
         android:textColor="@color/white"
         android:textSize="24sp" />
 
-<!--     Employee Login Button -->
+    <!--     Employee Login Button -->
     <Button
         android:id="@+id/btnEmployeeLogin"
         android:layout_width="320dp"

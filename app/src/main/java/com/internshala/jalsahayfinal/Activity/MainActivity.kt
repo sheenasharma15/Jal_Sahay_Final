@@ -1,11 +1,11 @@
-package com.internshala.jalsahayfinal
+package com.internshala.jalsahayfinal.Activity
 
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.TextView
+import com.internshala.jalsahayfinal.R
 
 
 class MainActivity : AppCompatActivity() {

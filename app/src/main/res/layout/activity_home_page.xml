@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".HomePageActivity"
+    tools:context=".Activity.HomePageActivity"
     android:background="@drawable/bluebackground">
 
     <!-- Toolbar Section -->
@@ -39,8 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:gravity="end"
-            android:paddingEnd="16dp">
+            android:gravity="end">
 
             <!-- Share Option -->
             <ImageView
@@ -48,9 +47,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_action_name_share"
-                android:paddingRight="5dp"
-                android:paddingLeft="0
-                dp"/>
+                android:layout_marginEnd="16dp"
+                android:layout_gravity="end|center_vertical"/>
 
             <!-- Choose Language Option -->
             <ImageView
@@ -58,10 +56,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_action_name_language"
-                android:contentDescription="TODO" />
+                android:contentDescription="TODO"
+                android:layout_gravity="end|center_vertical"/>
         </LinearLayout>
 
     </androidx.appcompat.widget.Toolbar>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="40dp" />
 
     <!-- Middle Section -->
 
@@ -81,7 +87,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center_horizontal"
-        android:layout_below="@+id/toolbar"
+        android:layout_below="@+id/viewPager"
         android:padding="16dp">
 
         <!-- About Text -->
@@ -140,146 +146,146 @@
         </LinearLayout>
 
 
-        <!-- Categories Section -->
-        <TextView
-            android:id="@+id/tvCategories"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/categories"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="16dp"
-            android:padding="16dp"/>
+<!--        &lt;!&ndash; Categories Section &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/tvCategories"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/categories"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            android:padding="16dp"/>-->
 
-        <!-- Categories Section -->
-        <GridLayout
-            android:id="@+id/categoriesSection"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:columnCount="2"
-            android:rowCount="3"
-            android:alignmentMode="alignMargins"
-            android:columnOrderPreserved="false">
+<!--        &lt;!&ndash; Categories Section &ndash;&gt;-->
+<!--        <GridLayout-->
+<!--            android:id="@+id/categoriesSection"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:columnCount="2"-->
+<!--            android:rowCount="3"-->
+<!--            android:alignmentMode="alignMargins"-->
+<!--            android:columnOrderPreserved="false">-->
 
-            <!-- Category 1 -->
-            <LinearLayout
-                android:id="@+id/category1"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:orientation="vertical"
-                android:gravity="center">
+<!--            &lt;!&ndash; Category 1 &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/category1"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:orientation="vertical"-->
+<!--                android:gravity="center">-->
 
-                <ImageButton
-                    style="@style/Widget.AppCompat.ButtonBar"
-                    android:id="@+id/btnFloods"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/floods"
-                    android:scaleType="fitCenter"
-                    android:background="?android:selectableItemBackground"
-                    android:contentDescription="@string/floods" />
+<!--                <ImageButton-->
+<!--                    style="@style/Widget.AppCompat.ButtonBar"-->
+<!--                    android:id="@+id/btnFloods"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:src="@drawable/floods"-->
+<!--                    android:scaleType="fitCenter"-->
+<!--                    android:background="?android:selectableItemBackground"-->
+<!--                    android:contentDescription="@string/floods" />-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/floods"
-                    android:textColor="#000000"
-                    android:textSize="20sp"
-                    android:layout_marginTop="8dp"
-                    android:textStyle="italic"/>
-            </LinearLayout>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/floods"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:textStyle="italic"/>-->
+<!--            </LinearLayout>-->
 
-            <!-- Category 2 -->
-            <!-- Add similar layouts for other categories -->
+<!--            &lt;!&ndash; Category 2 &ndash;&gt;-->
+<!--            &lt;!&ndash; Add similar layouts for other categories &ndash;&gt;-->
 
-            <LinearLayout
-                android:id="@+id/category2"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:orientation="vertical"
-                android:gravity="center">
+<!--            <LinearLayout-->
+<!--                android:id="@+id/category2"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:orientation="vertical"-->
+<!--                android:gravity="center">-->
 
-                <ImageButton
-                    style="@style/Widget.AppCompat.ButtonBar"
-                    android:id="@+id/btnPotholes"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/potholes"
-                    android:scaleType="fitCenter"
-                    android:background="?android:selectableItemBackground"
-                    android:contentDescription="@string/potholes" />
+<!--                <ImageButton-->
+<!--                    style="@style/Widget.AppCompat.ButtonBar"-->
+<!--                    android:id="@+id/btnPotholes"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:src="@drawable/potholes"-->
+<!--                    android:scaleType="fitCenter"-->
+<!--                    android:background="?android:selectableItemBackground"-->
+<!--                    android:contentDescription="@string/potholes" />-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/potholes"
-                    android:textColor="#000000"
-                    android:textSize="20sp"
-                    android:layout_marginTop="8dp"
-                    android:textStyle="italic"/>
-            </LinearLayout>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/potholes"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:textStyle="italic"/>-->
+<!--            </LinearLayout>-->
 
-            <!-- Add similar layouts for other categories -->
-            <LinearLayout
-                android:id="@+id/category3"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:orientation="vertical"
-                android:gravity="center">
+<!--            &lt;!&ndash; Add similar layouts for other categories &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/category3"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:orientation="vertical"-->
+<!--                android:gravity="center">-->
 
-                <ImageButton
-                    style="@style/Widget.AppCompat.ButtonBar"
-                    android:id="@+id/btnPipeline"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/pipeline"
-                    android:scaleType="fitCenter"
-                    android:background="?android:selectableItemBackground"
-                    android:contentDescription="@string/pipeline" />
+<!--                <ImageButton-->
+<!--                    style="@style/Widget.AppCompat.ButtonBar"-->
+<!--                    android:id="@+id/btnPipeline"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:src="@drawable/pipeline"-->
+<!--                    android:scaleType="fitCenter"-->
+<!--                    android:background="?android:selectableItemBackground"-->
+<!--                    android:contentDescription="@string/pipeline" />-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/pipeline"
-                    android:textColor="#000000"
-                    android:textSize="20sp"
-                    android:layout_marginTop="8dp"
-                    android:textStyle="italic"/>
-            </LinearLayout>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/pipeline"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:textStyle="italic"/>-->
+<!--            </LinearLayout>-->
 
-            <LinearLayout
-                android:id="@+id/category4"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:orientation="vertical"
-                android:gravity="center">
+<!--            <LinearLayout-->
+<!--                android:id="@+id/category4"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:orientation="vertical"-->
+<!--                android:gravity="center">-->
 
-                <ImageButton
-                    style="@style/Widget.AppCompat.ButtonBar"
-                    android:id="@+id/btnDrainage"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/drainage"
-                    android:scaleType="fitCenter"
-                    android:background="?android:selectableItemBackground"
-                    android:contentDescription="@string/drainage" />
+<!--                <ImageButton-->
+<!--                    style="@style/Widget.AppCompat.ButtonBar"-->
+<!--                    android:id="@+id/btnDrainage"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:src="@drawable/drainage"-->
+<!--                    android:scaleType="fitCenter"-->
+<!--                    android:background="?android:selectableItemBackground"-->
+<!--                    android:contentDescription="@string/drainage" />-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/drainage"
-                    android:textColor="#000000"
-                    android:textSize="20sp"
-                    android:textStyle="italic"
-                    android:layout_marginTop="8dp"/>
-            </LinearLayout>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/drainage"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="italic"-->
+<!--                    android:layout_marginTop="8dp"/>-->
+<!--            </LinearLayout>-->
 
-        </GridLayout>
+<!--        </GridLayout>-->
 
     </LinearLayout>
 
@@ -290,7 +296,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="16dp">
-<!--        android:cardCornerRadius="5dp"-->
+        <!--        android:cardCornerRadius="5dp"-->
 
         <LinearLayout
             android:id="@+id/footerSection"

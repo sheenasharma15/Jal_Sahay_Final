@@ -1,4 +1,4 @@
-package com.internshala.jalsahayfinal
+package com.internshala.jalsahayfinal.Activity
 
 
 import android.content.Intent
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.internshala.jalsahayfinal.R
 
 
 class LoginActivity : AppCompatActivity() {
@@ -20,7 +21,11 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
-
+//        NO ACCOUNT TO SIGNUP
+        val signUpTextView: TextView = findViewById(R.id.txtNoAccount)
+        signUpTextView.setOnClickListener {
+            val intent = Intent(this, SignUpActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
