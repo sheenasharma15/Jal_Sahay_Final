@@ -41,7 +41,7 @@
         android:textSize="24sp"
         android:layout_below="@+id/appName"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="5dp"
         android:layout_marginBottom="16dp"/>
 
     <!-- Email Login Edit Text -->
@@ -50,7 +50,7 @@
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/email"
+        android:hint="@string/email"
         android:textSize="20sp"
         android:textColor="@color/black"
         android:textStyle="bold"
@@ -65,9 +65,10 @@
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/password"
+        android:hint="@string/password"
         android:textStyle="bold"
         android:textSize="20sp"
+        android:inputType="textPassword"
         android:backgroundTint="@color/black"
         android:layout_below="@+id/etEmail"
         android:layout_marginTop="8dp"/>
@@ -83,5 +84,18 @@
         android:backgroundTint="@color/black"
         android:layout_below="@+id/etPassword"
         android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/txtNoAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="@string/don_t_have_an_account"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
 
 </RelativeLayout>

@@ -36,4 +36,6 @@
     <string name="help_and_support">Help And Support</string>
     <string name="change_password">Change Password</string>
     <string name="todo">TODO</string>
+    <string name="don_t_have_an_account"><a href="">Don\'t have an account?</a></string>
+
 </resources>
