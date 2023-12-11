@@ -5,9 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:padding="16dp"
     android:background="@drawable/bluebackground"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <!-- App Logo Centered -->
 
     <ImageView
         android:id="@+id/appLogo"
@@ -15,29 +15,34 @@
         android:layout_height="wrap_content"
         android:src="@drawable/disastermanagement"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:importantForAccessibility="no" />
 
     <!-- User Login Button -->
     <Button
         android:id="@+id/btnUserLogin"
-        android:layout_width="match_parent"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:text="@string/user_login"
-        android:backgroundTint="@drawable/rounded_button"
         android:layout_below="@+id/appLogo"
-        android:textSize="24sp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/user_login"
         android:textColor="@color/white"
-        android:layout_marginTop="16dp"/>
+        android:textSize="24sp" />
 
-    <!-- Employee Login Button -->
+<!--     Employee Login Button -->
     <Button
         android:id="@+id/btnEmployeeLogin"
-        android:layout_width="match_parent"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:text="@string/employee_login"
-        android:textSize="24sp"
-        android:backgroundTint="@drawable/rounded_button"
         android:layout_below="@+id/btnUserLogin"
-        android:layout_marginTop="16dp"/>
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/employee_login"
+        android:textSize="24sp" />
+
+
 
 </RelativeLayout>

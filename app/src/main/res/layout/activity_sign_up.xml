@@ -32,7 +32,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/enter_name"
-            android:inputType="text"/>
+            android:inputType="text"
+            android:autofillHints="none" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Email Input -->
@@ -48,7 +49,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/enter_email"
-            android:inputType="textEmailAddress"/>
+            android:inputType="textEmailAddress"
+            android:autofillHints="none" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Password Input -->
@@ -64,7 +66,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/enter_password"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword"
+            android:autofillHints="none" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Confirm Password Input -->
@@ -80,7 +83,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/confirm_password"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword"
+            android:autofillHints="none" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Sign Up Button -->
@@ -89,7 +93,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/sign_up"
-        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/black"
         android:layout_below="@+id/textInputConfirmPassword"
         android:layout_marginTop="16dp"/>
 </RelativeLayout>

@@ -21,7 +21,8 @@
             android:src="@drawable/ic_action_name_hamburger"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
-            android:layout_gravity="start"/>
+            android:layout_gravity="start"
+            android:contentDescription="@string/floods" />
 
         <!-- App Name -->
         <TextView
@@ -151,7 +152,8 @@
                     android:layout_height="100dp"
                     android:src="@drawable/floods"
                     android:scaleType="fitCenter"
-                    android:background="?android:selectableItemBackground"/>
+                    android:background="?android:selectableItemBackground"
+                    android:contentDescription="@string/floods" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -181,7 +183,8 @@
                     android:layout_height="100dp"
                     android:src="@drawable/potholes"
                     android:scaleType="fitCenter"
-                    android:background="?android:selectableItemBackground"/>
+                    android:background="?android:selectableItemBackground"
+                    android:contentDescription="@string/potholes" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -209,7 +212,8 @@
                     android:layout_height="100dp"
                     android:src="@drawable/pipeline"
                     android:scaleType="fitCenter"
-                    android:background="?android:selectableItemBackground"/>
+                    android:background="?android:selectableItemBackground"
+                    android:contentDescription="@string/pipeline" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -236,7 +240,8 @@
                     android:layout_height="100dp"
                     android:src="@drawable/drainage"
                     android:scaleType="fitCenter"
-                    android:background="?android:selectableItemBackground"/>
+                    android:background="?android:selectableItemBackground"
+                    android:contentDescription="@string/drainage" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -258,8 +263,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_margin="16dp"
-        android:cardCornerRadius="5dp">
+        android:layout_margin="16dp">
+<!--        android:cardCornerRadius="5dp"-->
 
         <LinearLayout
             android:id="@+id/footerSection"

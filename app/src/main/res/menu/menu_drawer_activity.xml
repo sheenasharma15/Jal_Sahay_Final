@@ -4,17 +4,17 @@
 
     <item
         android:id="@+id/nav_settings"
-        android:title="Settings"/>
+        android:title="@string/settings"/>
 
     <item
         android:id="@+id/nav_logout"
-        android:title="Logout"/>
+        android:title="@string/logout"/>
 
     <item
         android:id="@+id/nav_help"
-        android:title="Help And Support"/>
+        android:title="@string/help_and_support"/>
 
     <item
         android:id="@+id/nav_change"
-        android:title="Change Password"/>
+        android:title="@string/change_password"/>
 </menu>
