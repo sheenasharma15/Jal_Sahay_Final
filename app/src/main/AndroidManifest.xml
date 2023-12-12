@@ -13,6 +13,12 @@
         android:theme="@style/Theme.JALSAHAYFINAL"
         tools:targetApi="31">
         <activity
+            android:name=".Activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.UserEmployeeActivity"
+            android:exported="false" />
+        <activity
             android:name=".Adapter.CarouselAdapter"
             android:exported="false" />
         <activity
@@ -21,7 +27,8 @@
         <activity
             android:name=".Activity.FeedbackForm"
             android:exported="false" />
-        <activity android:name=".Activity.SplashScreen"
+        <activity
+            android:name=".Activity.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,13 +40,8 @@
             android:name=".Activity.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity.LoginActivity"
-            android:exported="false" />
-        <activity
             android:name=".Activity.MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>

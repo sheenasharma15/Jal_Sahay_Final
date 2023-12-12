@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/bluebackground">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -30,10 +31,11 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="200dp"
-        android:layout_height="80dp"
-        android:layout_marginEnd="95dp"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        android:layout_width="184dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/namejalsahay" />
 
@@ -69,43 +71,51 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="38dp"
+        android:id="@+id/police"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="28dp"
         android:layout_weight="1"
         app:layout_constraintBottom_toTopOf="@+id/footerCardView"
+        app:layout_constraintEnd_toStartOf="@+id/hospital"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/police" />
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginBottom="28dp"
+        android:id="@+id/hospital"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="@+id/footerCardView"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/police"
         app:srcCompat="@drawable/hospital" />
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:layout_marginBottom="28dp"
+        android:id="@+id/firebrigade"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="36dp"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="@+id/footerCardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:srcCompat="@drawable/help" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginBottom="28dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="@+id/footerCardView"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintEnd_toStartOf="@+id/firebrigade"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/hospital"
         app:srcCompat="@drawable/fire" />
 
     <androidx.viewpager2.widget.ViewPager2
@@ -118,49 +128,31 @@
         android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" >
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
     </androidx.viewpager2.widget.ViewPager2>
 
-    <LinearLayout
-        android:id="@+id/middleSection"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/toolbar"
-        android:layout_marginTop="10dp"
-        android:orientation="vertical"
-        android:padding="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewPager">
-
-    </LinearLayout>
-
     <!-- About Section -->
+
     <LinearLayout
         android:id="@+id/aboutSection"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="405dp"
+        android:layout_height="83dp"
         android:layout_below="@+id/viewPager"
-        android:layout_marginTop="10dp"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/footerCardView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/middleSection">
+        app:layout_constraintTop_toBottomOf="@+id/viewPager"
+        app:layout_constraintVertical_bias="0.242">
 
         <!-- About Text -->
-        <TextView
-            android:id="@+id/tvAbout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="CASES"
-            android:textSize="20sp"
-            android:textStyle="bold" />
 
         <!-- About Buttons -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -215,6 +207,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="20dp"
+        android:background="@drawable/bluebackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -227,6 +220,7 @@
             android:orientation="horizontal">
 
             <!-- Footer Buttons -->
+
             <Button
                 android:id="@+id/btnHome"
                 style="@style/Widget.AppCompat.ButtonBar"
@@ -286,15 +280,34 @@
         android:id="@+id/textViewContact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="20dp"
         android:layout_weight="1"
-        android:background="#BBDEFB"
         android:text="Contact"
         android:textColor="#00127E"
         android:textSize="24dp"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintBottom_toTopOf="@+id/police"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="300dp"
+        android:text="Cases"
+        android:textColor="#00127E"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/aboutSection"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager"
+        app:layout_constraintVertical_bias="0.395" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
