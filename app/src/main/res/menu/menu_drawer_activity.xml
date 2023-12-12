@@ -14,7 +14,5 @@
         android:id="@+id/nav_help"
         android:title="@string/help_and_support"/>
 
-    <item
-        android:id="@+id/nav_change"
-        android:title="@string/change_password"/>
+
 </menu>

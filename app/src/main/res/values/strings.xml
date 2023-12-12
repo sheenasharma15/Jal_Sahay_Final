@@ -37,5 +37,7 @@
     <string name="change_password">Change Password</string>
     <string name="todo">TODO</string>
     <string name="don_t_have_an_account"><a href="">Don\'t have an account?</a></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

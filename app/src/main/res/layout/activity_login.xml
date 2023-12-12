@@ -1,89 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:padding="16dp"
     android:background="@drawable/bluebackground"
+    android:padding="16dp"
     tools:context=".Activity.LoginActivity">
 
     <!-- App Logo Centered -->
-    <ImageView
-        android:id="@+id/appLogo"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:src="@drawable/disastermanagement"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"
-        android:contentDescription="@string/todo"
-        android:importantForAccessibility="no" />
 
     <!-- App Name in Bold -->
-    <TextView
-        android:id="@+id/appName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/jal_sahay"
-        android:textColor="@color/black"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        android:layout_below="@+id/appLogo"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="16dp"/>
 
     <!-- Login Prompt -->
-    <TextView
-        android:id="@+id/txtLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/login_account"
-        android:textSize="24sp"
-        android:layout_below="@+id/appName"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="16dp"/>
 
     <!-- Email Login Edit Text -->
-
-    <EditText
-        android:id="@+id/etEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/email"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:layout_below="@+id/txtLogin"
-        android:layout_marginTop="8dp"/>
 
 
     <!-- Password Login Edit Text-->
 
 
+    <!-- Other Login Button -->
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/todo"
+        android:importantForAccessibility="no"
+        android:src="@drawable/disastermanagement"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appName" />
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/jal_sahay"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/email"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appLogo" />
+
     <EditText
         android:id="@+id/etPassword"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:hint="@string/password"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:inputType="textPassword"
-        android:backgroundTint="@color/black"
         android:layout_below="@+id/etEmail"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
 
-
-    <!-- Other Login Button -->
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="match_parent"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/etPassword"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/black"
         android:text="@string/login"
         android:textSize="20sp"
-        android:backgroundTint="@color/black"
-        android:layout_below="@+id/etPassword"
-        android:layout_marginTop="20dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
     <TextView
         android:id="@+id/txtNoAccount"
@@ -92,10 +98,13 @@
         android:layout_below="@+id/btnLogin"
         android:layout_centerInParent="true"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:text="@string/don_t_have_an_account"
         android:textColor="@android:color/black"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
