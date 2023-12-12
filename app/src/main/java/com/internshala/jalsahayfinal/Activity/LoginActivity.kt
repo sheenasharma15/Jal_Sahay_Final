@@ -12,7 +12,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        //        LOGIN TO HOME PAGE
+//                LOGIN TO HOME PAGE
         val loginButton: Button = findViewById(R.id.btnLogin)
         loginButton.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)

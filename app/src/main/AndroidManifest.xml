@@ -21,6 +21,8 @@
         <activity
             android:name=".Adapter.CarouselAdapter"
             android:exported="false" />
+        <activity android:name=".Activity.UserEmployeeActivity"
+            android:exported="false"/>
         <activity
             android:name=".Activity.ProfileActivity"
             android:exported="false" />
