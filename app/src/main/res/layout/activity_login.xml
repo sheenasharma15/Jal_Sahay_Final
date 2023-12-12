@@ -23,7 +23,7 @@
     <!-- Other Login Button -->
 
     <ImageView
-        android:id="@+id/appLogo"
+        android:id="@+id/imageViewEarth"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_centerHorizontal="true"
@@ -46,50 +46,61 @@
         android:textColor="@color/black"
         android:textSize="40sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_below="@+id/appLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Login Prompt -->
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_account"
+        android:textSize="24sp"
+        android:layout_below="@+id/appName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Email Login Edit Text -->
 
     <EditText
         android:id="@+id/etEmail"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:hint="@string/email"
-        android:textColor="@color/black"
         android:textSize="20sp"
+        android:textColor="@color/black"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appLogo" />
+        android:layout_below="@+id/txtLogin"
+        android:layout_marginTop="8dp"/>
+
+
+    <!-- Password Login Edit Text-->
+
 
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/etEmail"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/black"
         android:hint="@string/password"
         android:inputType="textPassword"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+        android:backgroundTint="@color/black"
+        android:layout_below="@+id/etEmail"
+        android:layout_marginTop="8dp"/>
 
+
+    <!-- Other Login Button -->
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/etPassword"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="@color/black"
         android:text="@string/login"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+        android:backgroundTint="@color/black"
+        android:layout_below="@+id/etPassword"
+        android:layout_marginTop="20dp" />
 
     <TextView
         android:id="@+id/txtNoAccount"
@@ -101,10 +112,7 @@
         android:layout_marginTop="20dp"
         android:text="@string/don_t_have_an_account"
         android:textColor="@android:color/black"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+        android:textSize="16sp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
