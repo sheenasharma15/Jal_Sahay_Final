@@ -6,4 +6,7 @@
     </style>
 
     <style name="Theme.JALSAHAYFINAL" parent="Base.Theme.JALSAHAYFINAL" />
+    <style name="Theme.JALSAHAYFINAL.Background">
+        <item name="android:windowBackground">@drawable/bluebackground</item>
+    </style>
 </resources>
