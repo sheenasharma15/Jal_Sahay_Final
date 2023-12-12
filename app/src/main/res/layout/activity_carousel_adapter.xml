@@ -9,9 +9,10 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:scaleType="fitCenter"
-        android:layout_marginTop="16dp"/>
+        android:layout_height="170dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="16dp"
+        />
 
 
 </RelativeLayout>

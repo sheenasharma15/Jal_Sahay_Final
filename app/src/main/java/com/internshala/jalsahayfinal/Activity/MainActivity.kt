@@ -5,32 +5,22 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.viewpager2.widget.ViewPager2
+import com.internshala.jalsahayfinal.Adapter.CarouselAdapter
 import com.internshala.jalsahayfinal.R
 
 
 class MainActivity : AppCompatActivity() {
 
+    private val images = listOf(R.drawable.floods, R.drawable.pipeline, R.drawable.drainage, R.drawable.potholes)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        USER LOGIN BUTTON CLICK
-        val userLoginButton: Button = findViewById(R.id.btnUserLogin)
-        userLoginButton.setOnClickListener {
+        val viewPager: ViewPager2 = findViewById(R.id.viewPager)
+        val adapter = CarouselAdapter(this, images)
 
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
-        }
-
-//        EMPLOYEE LOGIN BUTTON CLICK
-       val employeeLoginButton: Button = findViewById(R.id.btnEmployeeLogin)
-        employeeLoginButton.setOnClickListener{
-            val intent = Intent(this, LoginActivity:: class.java)
-            startActivity(intent)
-        }
-
-
-
+        viewPager.adapter = adapter
     }
 }
 
