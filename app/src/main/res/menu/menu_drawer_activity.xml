@@ -14,5 +14,9 @@
         android:id="@+id/nav_help"
         android:title="@string/help_and_support"/>
 
+    <item
+        android:id="@+id/nav_language"
+        android:title="@string/language"/>
+
 
 </menu>

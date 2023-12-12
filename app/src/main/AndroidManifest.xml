@@ -13,6 +13,15 @@
         android:theme="@style/Theme.JALSAHAYFINAL"
         tools:targetApi="31">
         <activity
+            android:name=".Fragments.LangaugeFragment"
+            android:exported="false" />
+        <activity
+            android:name=".Fragments.HelpFragment"
+            android:exported="false" />
+        <activity
+            android:name=".Fragments.SettingsFragment"
+            android:exported="false" />
+        <activity
             android:name=".Fragments.LogoutFragment"
             android:exported="false" />
         <activity
