@@ -11,7 +11,7 @@
     <string name="drainage">Drainage</string>
     <string name="home">Home</string>
     <string name="map">Map</string>
-    <string name="camera">Camera</string>
+    <string name="camera">Report</string>
     <string name="profile">Profile</string>
     <string name="jal_sahay">JAL SAHAY</string>
     <string name="about">About</string>
@@ -37,5 +37,11 @@
     <string name="change_password">Change Password</string>
     <string name="todo">TODO</string>
     <string name="don_t_have_an_account"><a href="">Don\'t have an account?</a></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="language">"Change Language "</string>
+    <string name="contact">Contact</string>
+    <string name="complaints">Complaints</string>
+    <string name="report_problem">Report Problem</string>
 
 </resources>

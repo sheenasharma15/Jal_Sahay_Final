@@ -3,18 +3,20 @@
 
 
     <item
-        android:id="@+id/nav_settings"
+        android:id="@+id/settingsFragment"
         android:title="@string/settings"/>
 
     <item
-        android:id="@+id/nav_logout"
+        android:id="@+id/logoutFragment"
         android:title="@string/logout"/>
 
     <item
-        android:id="@+id/nav_help"
+        android:id="@+id/helpFragment"
         android:title="@string/help_and_support"/>
 
     <item
-        android:id="@+id/nav_change"
-        android:title="@string/change_password"/>
+        android:id="@+id/languageFragment"
+        android:title="@string/language"/>
+
+
 </menu>
