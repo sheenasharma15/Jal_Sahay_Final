@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".Activity.MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.MainActivity"
+    android:background="@color/white">
 
 
     <ScrollView
@@ -28,7 +28,8 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/ic_action_name_hamburger"
-                    android:layout_gravity="start"/>
+                    android:layout_gravity="start"
+                    android:onClick="openDrawer"/>
 
                 <!-- App Name -->
                 <TextView
@@ -196,6 +197,7 @@
                     android:layout_height="wrap_content"
                     android:drawableTop="@drawable/ic_action_name_home"
                     android:text="Home"
+                    android:textSize="12sp"
                   android:backgroundTint="@color/white"
                     android:layout_weight="1"
                     android:gravity="center"
@@ -207,7 +209,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:drawableTop="@drawable/ic_action_name_contact"
-                    android:text="@string/contact"
+                    android:text="@string/help"
+                    android:textSize="12sp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/white"
                     android:gravity="center"
@@ -220,6 +223,7 @@
                     android:layout_height="wrap_content"
                     android:drawableTop="@drawable/ic_action_name_map"
                     android:text="@string/map"
+                    android:textSize="12sp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/white"
                     android:gravity="center"
@@ -232,11 +236,15 @@
                     android:layout_height="wrap_content"
                     android:drawableTop="@drawable/ic_action_name_profile"
                     android:text="@string/profile"
+                    android:textSize="12sp"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:backgroundTint="@color/white"
                     android:textColor="@color/black"/>
             </LinearLayout>
+
+
+
         </RelativeLayout>
     </ScrollView>
 </RelativeLayout>

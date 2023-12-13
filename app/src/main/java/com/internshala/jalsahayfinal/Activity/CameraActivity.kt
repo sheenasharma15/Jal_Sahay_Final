@@ -27,10 +27,10 @@ class CameraActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_camera)
+        setContentView(R.layout.activity_main)
 
-        Cmaerabutton=findViewById(R.id.capturebtn)
-        Cameraimage=findViewById(R.id.imageView)
+        Cmaerabutton=findViewById(R.id.cameraButton)
+//        Cameraimage=findViewById(R.id.imageView)
 
         Cmaerabutton.setOnClickListener {
             val takePicture= Intent(MediaStore.ACTION_IMAGE_CAPTURE)
