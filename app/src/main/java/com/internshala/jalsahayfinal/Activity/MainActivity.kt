@@ -12,6 +12,7 @@ import com.internshala.jalsahayfinal.R
 
 class MainActivity : AppCompatActivity() {
 
+    lateinit var mapButton: Button
     private val images = listOf(R.drawable.floods, R.drawable.pipeline, R.drawable.drainage, R.drawable.potholes)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +22,13 @@ class MainActivity : AppCompatActivity() {
         val adapter = CarouselAdapter(this, images)
 
         viewPager.adapter = adapter
+
+        mapButton = findViewById(R.id.btnMap)
+
+        mapButton.setOnClickListener {
+            val intent = Intent(this, MapActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
 
