@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bluebackground"
+    android:background="@drawable/test3"
     tools:context=".Activity.UserEmployeeActivity">
 
     <!-- User Login Button -->
@@ -13,13 +13,13 @@
 
     <ImageView
         android:id="@+id/imageViewEarth"
-        android:layout_width="80dp"
+        android:layout_width="100dp"
         android:layout_height="80dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="16dp"
         android:importantForAccessibility="no"
-        android:src="@drawable/disastermanagement"
+        android:src="@drawable/satyamev_jayate"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,13 +29,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageViewEarth"
         android:layout_centerInParent="true"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="28dp"
         android:backgroundTint="@color/black"
         android:text="@string/user_login"
         android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewJalshayLogo" />
 
@@ -55,23 +55,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnUserLogin" />
 
-    <ImageView
-        android:id="@+id/imageViewMinistryOfJalShakti"
-        android:layout_width="150dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toEndOf="@+id/imageViewEarth"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ministryofjalshakti" />
+<!--    <ImageView-->
+<!--        android:id="@+id/imageViewMinistryOfJalShakti"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/imageViewEarth"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/ministryofjalshakti" />-->
 
     <ImageView
         android:id="@+id/imageViewJalshayLogo"
-        android:layout_width="413dp"
-        android:layout_height="336dp"
-        android:layout_marginTop="128dp"
+        android:layout_width="600dp"
+        android:layout_height="340dp"
+        android:layout_marginTop="140dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.798"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/jalsahaylogo" />
+        app:srcCompat="@drawable/test" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

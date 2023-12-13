@@ -12,7 +12,6 @@ import com.internshala.jalsahayfinal.R
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var reportBtn:Button
     private val images = listOf(R.drawable.floods, R.drawable.pipeline, R.drawable.drainage, R.drawable.potholes)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,12 +21,6 @@ class MainActivity : AppCompatActivity() {
         val adapter = CarouselAdapter(this, images)
 
         viewPager.adapter = adapter
-
-        reportBtn=findViewById(R.id.btnCamera)
-        reportBtn.setOnClickListener {
-            val intent=Intent(this,CameraActivity::class.java)
-            startActivity(intent)
-        }
     }
 }
 

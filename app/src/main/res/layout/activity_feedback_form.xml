@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:padding="16dp"
+    android:background="@drawable/test3"
     tools:context=".Activity.FeedbackForm">
 
     <!-- Feedback Form Heading -->
@@ -40,15 +41,17 @@
 
     <!-- Ratings (Place your rating views here) -->
 
+    <!-- Submit Feedback Button -->
+
     <RatingBar
         android:id="@+id/ratingBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textInputFeedback"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="93dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="50dp"/>
 
-    <!-- Submit Feedback Button -->
     <Button
         android:id="@+id/btnSubmitFeedback"
         android:layout_width="match_parent"

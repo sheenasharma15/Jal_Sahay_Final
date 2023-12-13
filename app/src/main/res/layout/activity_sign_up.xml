@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:padding="16dp"
+    android:background="@drawable/test3"
     tools:context=".Activity.SignUpActivity">
 
     <!-- Sign Up Heading -->
