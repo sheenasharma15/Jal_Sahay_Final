@@ -80,9 +80,11 @@
             <!-- Camera Button -->
             <ImageButton
                 android:id="@+id/cameraButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_action_name_camera"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/camera"
+                android:background="@color/white"
+                android:scaleType="fitCenter"
                 android:layout_below="@id/viewPager"
                 android:layout_centerHorizontal="false"
                 android:layout_marginTop="30dp"
@@ -114,7 +116,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/complaints"
                     android:textSize="20sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
             </RelativeLayout>
 

@@ -8,22 +8,22 @@
     tools:context=".Activity.LoginActivity">
 
 
-
     <ImageView
         android:id="@+id/imageViewEarth"
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="100dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="10dp"
         android:contentDescription="@string/todo"
         android:importantForAccessibility="no"
-        android:src="@drawable/ministryofjalshakti" />
+        android:src="@drawable/jalshaktilogo" />
 
     <TextView
         android:id="@+id/appName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/jal_sahay"
+        android:fontFamily="@font/oswald_regular"
         android:textColor="@color/black"
         android:textSize="40sp"
         android:textStyle="bold"
