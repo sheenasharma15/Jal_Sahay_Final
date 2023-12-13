@@ -43,5 +43,7 @@
     <string name="help">Help</string>
     <string name="complaints">Complaints</string>
     <string name="report_problem">Report Problem</string>
+    
+    <string name="google_map_api_key">AIzaSyDGbUWydl_Q_3jUKgdPA-MfNEKq-KLwn2g</string>
 
 </resources>

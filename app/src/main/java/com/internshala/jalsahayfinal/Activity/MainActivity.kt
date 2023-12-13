@@ -2,6 +2,7 @@ package com.internshala.jalsahayfinal.Activity
 
 
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -43,6 +44,7 @@ class MainActivity : AppCompatActivity() {
         //  carousel code
         val viewPager: ViewPager2 = findViewById(R.id.viewPager)
         val adapter = CarouselAdapter(this, images)
+
         viewPager.adapter = adapter
 
         // Show the first three images initially
@@ -70,13 +72,11 @@ class MainActivity : AppCompatActivity() {
 
 //     MAP CODE
         mapButton = findViewById(R.id.btnMap)
+
         mapButton.setOnClickListener {
             val intent = Intent(this, MapActivity::class.java)
             startActivity(intent)
         }
-
-
     }
 }
-
 

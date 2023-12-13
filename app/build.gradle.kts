@@ -1,8 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.gms.google-services")
 }
-
 android {
     namespace = "com.internshala.jalsahayfinal"
     compileSdk = 34
@@ -46,7 +46,5 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation("androidx.viewpager2:viewpager2:1.1.0-alpha01")
-
-
-
+    implementation ("com.google.android.gms:play-services-maps:18.2.0")
 }
