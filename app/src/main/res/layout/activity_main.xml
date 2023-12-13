@@ -1,314 +1,244 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.MainActivity">
 
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@drawable/bluebackground"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent">
 
-        <!-- Navigation Icon (Hamburger) -->
-
-        <ImageView
-            android:id="@+id/toolbarNavIcon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="start"
-            android:contentDescription="@string/floods"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:src="@drawable/ic_action_name_hamburger" />
-
-        <!-- App Name -->
-
-    </androidx.appcompat.widget.Toolbar>
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="184dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="50dp"
-        app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/namejalsahay" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="16dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <!-- Share Option -->
-        <ImageView
-            android:id="@+id/ivShare"
-            android:layout_width="37dp"
-            android:layout_height="37dp"
-            android:layout_gravity="end|center_vertical"
-            android:layout_marginEnd="16dp"
-            android:src="@drawable/ic_action_name_share" />
-
-        <!-- Choose Language Option -->
-        <ImageView
-            android:id="@+id/ivChooseLanguage"
-            android:layout_width="37dp"
-            android:layout_height="37dp"
-            android:layout_gravity="end|center_vertical"
-            android:contentDescription="TODO"
-            android:src="@drawable/ic_action_name_language" />
-
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/police"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="28dp"
-        android:layout_weight="1"
-        app:layout_constraintBottom_toTopOf="@+id/footerCardView"
-        app:layout_constraintEnd_toStartOf="@+id/hospital"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/police" />
-
-    <ImageView
-        android:id="@+id/hospital"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="32dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toTopOf="@+id/footerCardView"
-        app:layout_constraintEnd_toStartOf="@+id/imageView4"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/police"
-        app:srcCompat="@drawable/hospital" />
-
-    <ImageView
-        android:id="@+id/firebrigade"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="36dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toTopOf="@+id/footerCardView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:srcCompat="@drawable/help" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="32dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toTopOf="@+id/footerCardView"
-        app:layout_constraintEnd_toStartOf="@+id/firebrigade"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/hospital"
-        app:srcCompat="@drawable/fire" />
-
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewPager"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_below="@+id/toolbar"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar">
-
-    </androidx.viewpager2.widget.ViewPager2>
-
-    <!-- About Section -->
-
-    <LinearLayout
-        android:id="@+id/aboutSection"
-        android:layout_width="405dp"
-        android:layout_height="83dp"
-        android:layout_below="@+id/viewPager"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        android:padding="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/footerCardView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewPager"
-        app:layout_constraintVertical_bias="0.242">
-
-        <!-- About Text -->
-
-        <!-- About Buttons -->
-
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content">
 
-            <Button
-                android:id="@+id/btnRegistered"
-                style="@style/Widget.AppCompat.ButtonBar"
-                android:layout_width="0dp"
+            <!-- Toolbar Section -->
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <!-- Left Navigation Icon -->
+                <ImageView
+                    android:id="@+id/ToolbarNavIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_action_name_hamburger"
+                    android:layout_gravity="start"/>
+
+                <!-- App Name -->
+                <TextView
+                    android:id="@+id/appName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jal_sahay"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"/>
+
+                <!-- Share Icon -->
+                <ImageView
+                    android:id="@+id/shareIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_action_name_share"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentEnd="true"/>
+
+                <!-- Credits Icon -->
+                <ImageView
+                    android:id="@+id/creditsIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_action_name_credits"
+                    android:layout_gravity="end"
+                    android:layout_toStartOf="@+id/shareIcon"/>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <!-- Carousel Section -->
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/toolbar"
+                android:layout_marginTop="8dp"
+                android:padding="8dp">
+
+                <!-- Add your carousel widget here with rounded corners -->
+
+            </androidx.viewpager2.widget.ViewPager2>
+
+            <!-- Camera Button -->
+            <ImageButton
+                android:id="@+id/cameraButton"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="8dp"
-                android:text="@string/registered" />
+                android:src="@drawable/ic_action_name_camera"
+                android:layout_below="@id/viewPager"
+                android:layout_centerHorizontal="false"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="100dp"/>
 
-            <Button
-                android:id="@+id/btnSolved"
-                style="@style/Widget.AppCompat.ButtonBar"
-                android:layout_width="0dp"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="8dp"
-                android:text="@string/solved" />
-
-            <Button
-                android:id="@+id/btnPending"
-                style="@style/Widget.AppCompat.ButtonBar"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="8dp"
-                android:text="@string/pending" />
-
-            <Button
-                android:id="@+id/btnCancelled"
-                style="@style/Widget.AppCompat.ButtonBar"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="8dp"
-                android:text="@string/cancelled" />
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/footerCardView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/bluebackground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-        <!--        android:cardCornerRadius="5dp"-->
-
-        <LinearLayout
-            android:id="@+id/footerSection"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <!-- Footer Buttons -->
-
-            <Button
-                android:id="@+id/btnHome"
-                style="@style/Widget.AppCompat.ButtonBar"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="@color/white"
-                android:drawableTop="@drawable/ic_action_name_home"
-                android:padding="8dp"
-                android:text="@string/home"
+                android:layout_toEndOf="@id/cameraButton"
+                android:layout_marginStart="8dp"
+                android:text="@string/report_problem"
+                android:textSize="20sp"
                 android:textColor="@color/black"
-                android:textStyle="bold" />
+                android:layout_marginTop="315dp"/>
 
-            <Button
-                android:id="@+id/btnMap"
-                style="@style/Widget.AppCompat.ButtonBar"
-                android:layout_width="0dp"
+            <!-- Complaints Text Box -->
+            <RelativeLayout
+                android:id="@+id/complaintsBox"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="@color/white"
-                android:drawableTop="@drawable/ic_action_name_map"
-                android:padding="8dp"
-                android:text="@string/map"
-                android:textColor="@color/black"
-                android:textStyle="bold" />
+                android:layout_below="@id/cameraButton"
+                android:layout_marginTop="8dp"
+                android:padding="16dp"
+                android:background="@color/white">
 
-            <Button
-                android:id="@+id/btnCamera"
-                style="@style/Widget.AppCompat.ButtonBar"
-                android:layout_width="0dp"
+                <TextView
+                    android:id="@+id/complaintsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/complaints"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <!-- Horizontal Buttons Row 1 -->
+            <RelativeLayout
+                android:id="@+id/buttonsRow1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="@color/white"
-                android:drawableTop="@drawable/ic_action_name_camera"
-                android:padding="8dp"
-                android:text="@string/camera"
-                android:textColor="@color/black"
-                android:textStyle="bold" />
+                android:layout_below="@id/complaintsBox"
+                android:layout_marginTop="8dp">
 
-            <Button
-                android:id="@+id/btnProfile"
-                style="@style/Widget.AppCompat.ButtonBar"
-                android:layout_width="0dp"
+                <!-- Button 1 -->
+                <ImageButton
+                    android:id="@+id/button1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/resolved"
+                    android:layout_marginLeft="30dp"
+                    android:scaleType="fitCenter"
+                    android:background="@color/white"/>
+
+                <!-- Button 2 -->
+                <ImageButton
+                    android:id="@+id/button2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/cancelled"
+                    android:layout_marginStart="8dp"
+                    android:scaleType="fitCenter"
+                    android:layout_toRightOf="@id/button1"
+                    android:background="@color/white"/>
+
+            </RelativeLayout>
+
+            <!-- Horizontal Buttons Row 2 -->
+            <RelativeLayout
+                android:id="@+id/buttonsRow2"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="@color/white"
-                android:drawableTop="@drawable/ic_action_name_profile"
-                android:padding="8dp"
-                android:text="@string/profile"
-                android:textColor="@color/black"
-                android:textStyle="bold" />
+                android:layout_below="@id/buttonsRow1"
+                android:layout_marginTop="8dp">
 
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+                <!-- Button 3 -->
+                <ImageButton
+                    android:id="@+id/button3"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/registered2"
+                    android:scaleType="fitCenter"
+                    android:background="@color/white"/>
 
-    <TextView
-        android:id="@+id/textViewContact"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="300dp"
-        android:layout_marginBottom="20dp"
-        android:layout_weight="1"
-        android:text="Contact"
-        android:textColor="#00127E"
-        android:textSize="24dp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/police"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+                <!-- Button 4 -->
+                <ImageButton
+                    android:id="@+id/button4"
+                    android:layout_width="150dp"
+                    android:src="@drawable/progress"
+                    android:layout_height="150dp"
+                    android:background="@color/white"
+                    android:layout_toRightOf="@id/button3"
+                    android:scaleType="fitCenter"
+                    android:layout_marginStart="8dp"/>
 
-    <TextView
-        android:id="@+id/tvAbout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="300dp"
-        android:text="Cases"
-        android:textColor="#00127E"
-        android:textSize="24sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/aboutSection"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.27"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewPager"
-        app:layout_constraintVertical_bias="0.395" />
+            </RelativeLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <!-- Footer Section -->
+            <LinearLayout
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/buttonsRow2"
+                android:layout_alignParentBottom="true">
+
+                <!-- Home Icon -->
+                <Button
+                    android:id="@+id/btnHome"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_action_name_home"
+                    android:text="Home"
+                  android:backgroundTint="@color/white"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+
+                <!-- Contact Icon -->
+                <Button
+                    android:id="@+id/btnContact"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_action_name_contact"
+                    android:text="@string/contact"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+
+                <!-- Map Icon -->
+                <Button
+                    android:id="@+id/btnMap"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_action_name_map"
+                    android:text="@string/map"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+
+                <!-- Profile Icon -->
+                <Button
+                    android:id="@+id/btnProfile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_action_name_profile"
+                    android:text="@string/profile"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+
+

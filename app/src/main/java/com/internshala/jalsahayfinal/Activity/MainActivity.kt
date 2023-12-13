@@ -4,17 +4,24 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.drawerlayout.widget.DrawerLayout
 
 import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.navigation.NavigationView
 import com.internshala.jalsahayfinal.Adapter.CarouselAdapter
+import com.internshala.jalsahayfinal.Fragments.HelpFragment
+import com.internshala.jalsahayfinal.Fragments.LangaugeFragment
+import com.internshala.jalsahayfinal.Fragments.LogoutFragment
+import com.internshala.jalsahayfinal.Fragments.SettingsFragment
 import com.internshala.jalsahayfinal.R
 import java.util.Timer
 import java.util.TimerTask
 
 class MainActivity : AppCompatActivity() {
 
-
+// CODE FOR CAROUSEL AND TIMER
     private lateinit var viewPager: ViewPager
     private lateinit var timer: Timer
     private val images = listOf(
@@ -30,6 +37,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+
+
+//CAROUSEL CODE
         val viewPager: ViewPager2 = findViewById(R.id.viewPager)
         val adapter = CarouselAdapter(this, images)
         viewPager.adapter = adapter
