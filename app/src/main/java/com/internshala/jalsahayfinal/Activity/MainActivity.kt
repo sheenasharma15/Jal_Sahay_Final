@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
         viewPager.adapter = adapter
 
         mapButton = findViewById(R.id.btnMap)
-
         mapButton.setOnClickListener {
             val intent = Intent(this, MapActivity::class.java)
             startActivity(intent)
