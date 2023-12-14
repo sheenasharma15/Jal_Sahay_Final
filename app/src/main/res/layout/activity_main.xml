@@ -125,16 +125,15 @@
                 android:id="@+id/buttonsRow1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/complaintsBox"
-                android:layout_marginTop="8dp">
+                android:layout_below="@id/complaintsBox">
 
                 <!-- Button 1 -->
                 <ImageButton
                     android:id="@+id/button1"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/resolved"
-                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/resolved_main"
+                    android:layout_marginLeft="50dp"
                     android:scaleType="fitCenter"
                     android:background="@color/white"/>
 
@@ -143,11 +142,12 @@
                     android:id="@+id/button2"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/cancelled"
                     android:layout_marginStart="8dp"
-                    android:scaleType="fitCenter"
+                    android:layout_marginLeft="137dp"
                     android:layout_toRightOf="@id/button1"
-                    android:background="@color/white"/>
+                    android:background="@color/white"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/cancelled_main" />
 
             </RelativeLayout>
 
@@ -156,16 +156,15 @@
                 android:id="@+id/buttonsRow2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/buttonsRow1"
-                android:layout_marginTop="8dp">
+                android:layout_below="@id/buttonsRow1">
 
                 <!-- Button 3 -->
                 <ImageButton
                     android:id="@+id/button3"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:layout_marginLeft="30dp"
-                    android:src="@drawable/registered2"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/registered_main"
                     android:scaleType="fitCenter"
                     android:background="@color/white"/>
 
@@ -173,7 +172,7 @@
                 <ImageButton
                     android:id="@+id/button4"
                     android:layout_width="150dp"
-                    android:src="@drawable/progress"
+                    android:src="@drawable/progress_main"
                     android:layout_height="150dp"
                     android:background="@color/white"
                     android:layout_toRightOf="@id/button3"
@@ -244,9 +243,6 @@
                     android:backgroundTint="@color/white"
                     android:textColor="@color/black"/>
             </LinearLayout>
-
-
-
         </RelativeLayout>
     </ScrollView>
 </RelativeLayout>
