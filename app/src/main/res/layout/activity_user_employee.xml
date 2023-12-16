@@ -7,19 +7,15 @@
     android:background="@drawable/test3"
     tools:context=".Activity.UserEmployeeActivity">
 
-    <!-- User Login Button -->
-
-    <!--     Employee Login Button -->
 
     <ImageView
-        android:id="@+id/imageViewEarth"
+        android:id="@+id/satyamev"
         android:layout_width="100dp"
-        android:layout_height="80dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="16dp"
         android:importantForAccessibility="no"
-        android:src="@drawable/satyamev_jayate"
+        android:src="@drawable/satyamev"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,9 +23,9 @@
         android:id="@+id/btnUserLogin"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageViewEarth"
+        android:layout_below="@+id/satyamev"
         android:layout_centerInParent="true"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="70dp"
         android:backgroundTint="@color/black"
         android:text="@string/user_login"
         android:textColor="@color/white"
@@ -37,7 +33,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewJalshayLogo" />
+        app:layout_constraintTop_toBottomOf="@+id/JalshayLogo" />
 
     <Button
         android:id="@+id/btnEmployeeLogin"
@@ -45,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnUserLogin"
         android:layout_centerInParent="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:backgroundTint="@color/black"
         android:text="@string/employee_login"
         android:textColor="#FFFFFF"
@@ -55,24 +51,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnUserLogin" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/imageViewMinistryOfJalShakti"-->
-<!--        android:layout_width="150dp"-->
-<!--        android:layout_height="80dp"-->
-<!--        android:layout_marginTop="16dp"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/imageViewEarth"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:srcCompat="@drawable/ministryofjalshakti" />-->
 
     <ImageView
-        android:id="@+id/imageViewJalshayLogo"
-        android:layout_width="0dp"
+        android:id="@+id/JalshayLogo"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="132dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/test" />
+        app:srcCompat="@drawable/jal_sahay" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

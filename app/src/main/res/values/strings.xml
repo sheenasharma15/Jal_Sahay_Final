@@ -43,7 +43,10 @@
     <string name="help">Help</string>
     <string name="complaints">Complaints</string>
     <string name="report_problem">Report Problem</string>
-    
+
     <string name="google_map_api_key">AIzaSyDGbUWydl_Q_3jUKgdPA-MfNEKq-KLwn2g</string>
+    <string name="OpenDrawer">Open Drawer</string>
+    <string name="CloseDrawer">Close Drawer</string>
+    <string name="user_profile">Your Profile</string>
 
 </resources>

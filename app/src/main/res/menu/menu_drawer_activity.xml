@@ -4,18 +4,22 @@
 
     <item
         android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_action_name_settings"
         android:title="@string/settings"/>
 
     <item
         android:id="@+id/logoutFragment"
+        android:icon="@drawable/ic_action_name_logout"
         android:title="@string/logout"/>
 
     <item
         android:id="@+id/helpFragment"
+        android:icon="@drawable/help"
         android:title="@string/help_and_support"/>
 
     <item
         android:id="@+id/languageFragment"
+        android:icon="@drawable/ic_action_name_language"
         android:title="@string/language"/>
 
 

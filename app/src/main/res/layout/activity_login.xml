@@ -40,7 +40,6 @@
         android:textSize="24sp"
         android:layout_below="@+id/appName"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
         android:layout_marginBottom="16dp"/>
 
     <!-- Email Login Edit Text -->
@@ -77,10 +76,11 @@
     <!-- Other Login Button -->
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/etPassword"
-        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
         android:backgroundTint="@color/black"
         android:text="@string/login"
         android:textColor="#FFFFFF"

@@ -3,14 +3,15 @@ package com.internshala.jalsahayfinal.Activity
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
-import androidx.appcompat.app.AppCompatActivity
 
-import androidx.core.view.GravityCompat
+import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.navigation.NavigationView
 import com.internshala.jalsahayfinal.Adapter.CarouselAdapter
 import com.internshala.jalsahayfinal.R
 import java.util.Timer
@@ -25,6 +26,11 @@ class MainActivity : AppCompatActivity() {
     private lateinit var timer: Timer
 
     lateinit var mapButton: Button
+    lateinit var profileButton: Button
+    lateinit var homeButton: Button
+    lateinit var helpButton: Button
+
+
     private val images =
         listOf(R.drawable.floods, R.drawable.pipeline,
             R.drawable.drainage, R.drawable.potholes,
@@ -34,10 +40,18 @@ class MainActivity : AppCompatActivity() {
     private var currentPage = 0
 
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+//        main to profile
+        profileButton = findViewById(R.id.btnProfile)
+        profileButton.setOnClickListener {
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
+        }
 
 
 
@@ -71,15 +85,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
-
-
     override fun onDestroy() {
         super.onDestroy()
         // Stop the timer when the activity is destroyed
         timer.cancel()
-
-
-
     }
 }
 
