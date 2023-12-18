@@ -84,6 +84,20 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, MapActivity::class.java)
             startActivity(intent)
         }
+
+        helpButton = findViewById(R.id.btnContact)
+
+        helpButton.setOnClickListener{
+            val intent = Intent(this,HelpActivity::class.java)
+            startActivity(intent)
+        }
+
+        homeButton = findViewById(R.id.btnHome)
+
+        homeButton.setOnClickListener{
+            val intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
     }
     override fun onDestroy() {
         super.onDestroy()
