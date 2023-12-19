@@ -11,7 +11,7 @@ class SignUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
 
-        val signupButton: Button = findViewById(R.id.btnSignUp)
+        val signupButton: Button = findViewById(R.id.signUpBtn)
         signupButton.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
