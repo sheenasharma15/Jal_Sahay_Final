@@ -7,16 +7,16 @@
     android:background="@drawable/test3"
     tools:context=".Activity.SplashScreen">
 
-    <ImageView
-        android:id="@+id/satyamev"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true"
-        android:importantForAccessibility="no"
-        android:src="@drawable/satyamev"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <ImageView-->
+<!--        android:id="@+id/satyamev"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:importantForAccessibility="no"-->
+<!--        android:src="@drawable/satyamev"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
 
 
@@ -33,9 +33,9 @@
 
     <ImageView
         android:id="@+id/madeInId"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/made_in_india"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/satyamev"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

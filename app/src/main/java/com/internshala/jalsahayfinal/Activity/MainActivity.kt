@@ -4,21 +4,26 @@ package com.internshala.jalsahayfinal.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-
-import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
-import androidx.drawerlayout.widget.DrawerLayout
 import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.widget.ViewPager2
-import com.google.android.material.navigation.NavigationView
+import com.android.volley.Request
+import com.android.volley.RequestQueue
+import com.android.volley.RetryPolicy
+import com.android.volley.VolleyError
+import com.android.volley.toolbox.JsonObjectRequest
+import com.android.volley.toolbox.Volley
 import com.internshala.jalsahayfinal.Adapter.CarouselAdapter
 import com.internshala.jalsahayfinal.R
+import org.json.JSONObject
 import java.util.Timer
 import java.util.TimerTask
 
 
+
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var requestQueue: RequestQueue
 
 
 
@@ -45,6 +50,49 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+
+        requestQueue = Volley.newRequestQueue(this)
+        val apiUrl = "https://titans.thelinuxserver.cloud/classifyandpred/"
+        val postData = JSONObject()
+        postData.put("firebase_url", "https://firebasestorage.googleapis.com/v0/b/base-project-14a6e.appspot.com/o/uploads%2Fimages%2F1702829207442-Screenshot%20(738).png?alt=media&token=c7912b57-c289-4ace-8bfa-dfba2f8e3ea2")
+        val request = JsonObjectRequest(
+            Request.Method.POST, apiUrl, postData,
+            { response ->
+                println("response is "+response)
+
+
+                val className: String = response.getString("class")
+
+                val confidence: String = response.getString("confidence")
+
+            },
+            { error ->
+                println("response is "+error)
+            }
+        )
+        requestQueue.add(request)
+
+        request.retryPolicy = object : RetryPolicy {
+            override fun getCurrentTimeout(): Int {
+                return 50000
+            }
+
+            override fun getCurrentRetryCount(): Int {
+                return 50000
+            }
+
+            @Throws(VolleyError::class)
+            override fun retry(error: VolleyError) {
+            }
+        }
+
+
+
+
+
+
 
 //        main to profile
         profileButton = findViewById(R.id.btnProfile)
@@ -99,6 +147,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+
+
     override fun onDestroy() {
         super.onDestroy()
         // Stop the timer when the activity is destroyed

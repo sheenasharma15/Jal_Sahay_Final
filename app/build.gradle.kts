@@ -47,4 +47,9 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation("androidx.viewpager2:viewpager2:1.1.0-beta02")
     implementation ("com.google.android.gms:play-services-maps:18.2.0")
+//    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+//    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.google.code.gson:gson:2.9.1")
+    implementation("com.android.volley:volley:1.2.1")
+
 }

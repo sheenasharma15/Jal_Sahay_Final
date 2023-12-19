@@ -89,7 +89,7 @@
                 android:layout_below="@id/viewPager"
                 android:layout_centerHorizontal="false"
                 android:layout_marginTop="30dp"
-                android:layout_marginLeft="100dp"/>
+                android:layout_marginLeft="75dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -134,7 +134,7 @@
                     android:layout_width="150dp"
                     android:layout_height="100dp"
                     android:src="@drawable/resolved_main"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="25dp"
                     android:scaleType="fitCenter"
                     android:background="@color/white"/>
 
@@ -164,7 +164,7 @@
                     android:id="@+id/button3"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="25dp"
                     android:src="@drawable/registered_main"
                     android:scaleType="fitCenter"
                     android:background="@color/white"/>
