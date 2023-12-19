@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var profileButton: Button
     lateinit var homeButton: Button
     lateinit var helpButton: Button
+    lateinit var cameraButton: Button
 
 
     private val images =
