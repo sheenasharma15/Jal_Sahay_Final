@@ -23,8 +23,6 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
-    <string name="user_login">User Login</string>
-    <string name="employee_login">Employee Login</string>
     <string name="user_name">User Name</string>
     <string name="sign_up">SIGN UP</string>
     <string name="enter_name">Enter your name here</string>
@@ -48,5 +46,6 @@
     <string name="OpenDrawer">Open Drawer</string>
     <string name="CloseDrawer">Close Drawer</string>
     <string name="user_profile">Your Profile</string>
+    <string name="signup">Sign Up</string>
 
 </resources>

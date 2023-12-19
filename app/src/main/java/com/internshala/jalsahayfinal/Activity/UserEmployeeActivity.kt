@@ -18,10 +18,10 @@ class UserEmployeeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-//        EMPLOYEE LOGIN BUTTON CLICK
-        val employeeLoginButton: Button = findViewById(R.id.btnEmployeeLogin)
-        employeeLoginButton.setOnClickListener{
-            val intent = Intent(this, LoginActivity:: class.java)
+//        SIGN UP MAIN BUTTON CLICK
+        val signUpButton: Button = findViewById(R.id.signupMain)
+         signUpButton.setOnClickListener{
+            val intent = Intent(this, SignUpActivity:: class.java)
             startActivity(intent)
         }
     }
