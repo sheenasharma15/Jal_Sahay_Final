@@ -134,14 +134,14 @@ class MainActivity : AppCompatActivity() {
         }, 2000, 2000)
 
         //     MAP CODE
-        mapButton = findViewById(R.id.btnMap)
+        mapButton = findViewById(R.id.button3)
 
         mapButton.setOnClickListener {
             val intent = Intent(this, MapActivity::class.java)
             startActivity(intent)
         }
 
-        helpButton = findViewById(R.id.btnContact)
+        helpButton = findViewById(R.id.button2)
 
         helpButton.setOnClickListener{
             val intent = Intent(this,HelpActivity::class.java)

@@ -1,5 +1,6 @@
 package com.internshala.jalsahayfinal.Activity
 
+import android.app.Activity
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.graphics.Bitmap
@@ -7,6 +8,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
@@ -16,42 +18,31 @@ import com.internshala.jalsahayfinal.R
 import java.io.File
 
 class CameraActivity : AppCompatActivity() {
-    lateinit var Cameraimage: ImageView
-    lateinit var Cmaerabutton: FloatingActionButton
-    lateinit var imageUri: Uri
-    private val contract = registerForActivityResult(ActivityResultContracts.TakePicture()){
-        Cameraimage.setImageURI(null)
-        Cameraimage.setImageURI(imageUri)
-    }
-    val REQUEST_CODE=100
-
+    private val CAMERA_REQUEST_CODE = 1
+lateinit var imageView : ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_camera)
 
-        Cmaerabutton=findViewById(R.id.cameraButton)
-//        Cameraimage=findViewById(R.id.imageView)
+        val captureButton: Button = findViewById(R.id.captureButton)
+        imageView = findViewById(R.id.imageView)
 
-        Cmaerabutton.setOnClickListener {
-            val takePicture= Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-            try{
-                startActivityForResult(takePicture,REQUEST_CODE)
-            }
-            catch (e: ActivityNotFoundException){
-                Toast.makeText(this,"Error"+e.localizedMessage, Toast.LENGTH_SHORT).show()
-            }
+
+        captureButton.setOnClickListener {
+            val cameraIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+            startActivityForResult(cameraIntent, CAMERA_REQUEST_CODE)
         }
+
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        if(requestCode==REQUEST_CODE && resultCode== RESULT_OK){
-            val imageBitmap=data?.extras?.get("data") as Bitmap
-            Cameraimage.setImageBitmap(imageBitmap)
-        }
-        else{
-            super.onActivityResult(requestCode, resultCode, data)
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == CAMERA_REQUEST_CODE && resultCode == Activity.RESULT_OK) {
+            val photo: Bitmap = data?.extras?.get("data") as Bitmap
+            imageView.setImageBitmap(photo)
         }
     }
+
 
     private fun createImageUri():Uri?{
         val image= File(applicationContext.filesDir,"camera_photo.png")
