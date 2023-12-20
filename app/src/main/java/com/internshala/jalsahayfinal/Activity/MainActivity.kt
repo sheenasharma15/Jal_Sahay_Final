@@ -4,6 +4,8 @@ package com.internshala.jalsahayfinal.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.RadioButton
+import android.widget.RadioGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
@@ -52,6 +54,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val radioGroup = findViewById<RadioGroup>(R.id.radioGroup)
+        radioGroup.setOnCheckedChangeListener { _, checkedId ->
+            val selectedRadioButton = findViewById<RadioButton>(checkedId)
+            showToast("Selected Option: ${selectedRadioButton.text}")
+        }
+        private fun showToast(message: String) {
+            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+        }
 
 
 
@@ -148,22 +159,12 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
+
+
     }
 
 
-    val button1 = findViewById<Button>(R.id.button1)
-    val button2 = findViewById<Button>(R.id.button2)
-    val button3 = findViewById<Button>(R.id.button3)
-    val button4 = findViewById<Button>(R.id.button4)
-    val button5 = findViewById<Button>(R.id.button5)
 
-    // Set up a click listener for each button
-    button1.se
-
-
-private fun showToast(message: String) {
-    Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
-}
 
 
 
