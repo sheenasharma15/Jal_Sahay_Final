@@ -79,35 +79,26 @@
             </androidx.viewpager2.widget.ViewPager2>
 
             <!-- Camera Button -->
-            <ImageButton
-                android:id="@+id/cameraButton"
-                android:layout_width="50dp"
+            <Button
+                android:id="@+id/report_Button_main"
+                android:layout_width="200dp"
                 android:layout_height="50dp"
-                android:src="@drawable/camera"
-                android:background="@color/white"
                 android:scaleType="fitCenter"
+                android:text="Register Complaint"
+                android:background="@drawable/box_background"
+                android:textSize="17sp"
                 android:layout_below="@id/viewPager"
                 android:layout_centerHorizontal="false"
                 android:layout_marginTop="30dp"
                 android:layout_marginLeft="75dp"/>
 
-            <TextView
-                android:id="@+id/reportText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="315dp"
-                android:layout_toEndOf="@id/cameraButton"
-                android:text="@string/report_problem"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
 
             <!-- Complaints Text Box -->
             <RelativeLayout
                 android:id="@+id/complaintsBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/cameraButton"
+                android:layout_below="@id/report_Button_main"
                 android:layout_marginTop="8dp"
                 android:padding="16dp"
                 android:background="@color/white">

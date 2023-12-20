@@ -62,7 +62,11 @@
             android:exported="false" />
         <activity
             android:name=".Activity.MainActivity"
-            android:exported="true"></activity>
+            android:exported="true"/>
+        <activity android:name=".Activity.ReportActivity"
+            android:exported="false">
+
+        </activity>
     </application>
 
 </manifest>

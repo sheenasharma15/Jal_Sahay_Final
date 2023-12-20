@@ -4,9 +4,7 @@ package com.internshala.jalsahayfinal.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.RadioButton
-import android.widget.RadioGroup
-import android.widget.Toast
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.widget.ViewPager2
@@ -18,7 +16,6 @@ import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import com.internshala.jalsahayfinal.Adapter.CarouselAdapter
 import com.internshala.jalsahayfinal.R
-import com.internshala.jalsahayfinal.R.id.radioGroup
 import org.json.JSONObject
 import java.util.Timer
 import java.util.TimerTask
@@ -39,6 +36,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var homeButton: Button
     lateinit var helpButton: Button
     lateinit var cameraButton: Button
+    lateinit var reportButton:Button
 
 
     private val images =
@@ -59,7 +57,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
+//VOLLEY CODE
 
         requestQueue = Volley.newRequestQueue(this)
         val apiUrl = "https://titans.thelinuxserver.cloud/classifyandpred/"
@@ -134,14 +132,14 @@ class MainActivity : AppCompatActivity() {
         }, 2000, 2000)
 
         //     MAP CODE
-        mapButton = findViewById(R.id.button3)
+        mapButton = findViewById(R.id.btnMap)
 
         mapButton.setOnClickListener {
             val intent = Intent(this, MapActivity::class.java)
             startActivity(intent)
         }
 
-        helpButton = findViewById(R.id.button2)
+        helpButton = findViewById(R.id.btnContact)
 
         helpButton.setOnClickListener{
             val intent = Intent(this,HelpActivity::class.java)
@@ -152,6 +150,12 @@ class MainActivity : AppCompatActivity() {
 
         homeButton.setOnClickListener{
             val intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        reportButton = findViewById(R.id.report_Button_main)
+        reportButton.setOnClickListener{
+            val intent = Intent(this,ReportActivity::class.java)
             startActivity(intent)
         }
     }
