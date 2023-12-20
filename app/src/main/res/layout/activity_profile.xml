@@ -88,55 +88,57 @@
         </RelativeLayout>
     </RelativeLayout>
 
-            <ImageButton
-                android:id="@+id/resolved_final"
-                android:layout_width="300dp"
-                android:layout_height="70dp"
-                android:layout_below="@+id/userDetailsLayout"
-                android:layout_centerInParent="true"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/resolved_final"
-                android:scaleType="fitCenter"
-                android:backgroundTint="@color/white"/>
-
     <ImageButton
-        android:id="@+id/cancelled_final"
-        android:layout_width="300dp"
+        android:id="@+id/resolved_final"
+        android:layout_width="200dp"
         android:layout_height="70dp"
-        android:layout_below="@+id/resolved_final"
-        android:layout_centerInParent="true"
-        android:src="@drawable/cancelled_final"
+        android:layout_below="@+id/userDetailsLayout"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/white"
         android:scaleType="fitCenter"
-        android:backgroundTint="@color/white"/>
+        android:src="@drawable/resolved_final" />
 
-    <ImageButton
-        android:id="@+id/progress_final"
-        android:layout_width="300dp"
-        android:layout_height="70dp"
-        android:layout_below="@+id/cancelled_final"
-        android:layout_centerInParent="true"
-        android:src="@drawable/progress_final"
-        android:scaleType="fitCenter"
-        android:backgroundTint="@color/white"/>
+<!--    <ImageButton-->
+<!--        android:id="@+id/cancelled_final"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:layout_below="@+id/resolved_final"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        android:scaleType="fitCenter"-->
+<!--        android:src="@drawable/cancelled_final" />-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/progress_final"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:layout_below="@+id/cancelled_final"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:src="@drawable/progress_final"-->
+<!--        android:scaleType="fitCenter"-->
+<!--        android:backgroundTint="@color/white"/>-->
 
     <ImageButton
         android:id="@+id/registered_final"
-        android:layout_width="300dp"
+        android:layout_width="200dp"
         android:layout_height="70dp"
-        android:layout_below="@+id/progress_final"
+        android:layout_below="@+id/userDetailsLayout"
         android:layout_centerInParent="true"
-        android:src="@drawable/registered_final"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/resolved_final"
+        android:backgroundTint="@color/white"
         android:scaleType="fitCenter"
-        android:backgroundTint="@color/white"/>
+        android:src="@drawable/registered_final" />
 
     <ImageView
         android:layout_width="100dp"
-        android:layout_height="120dp"
+        android:layout_height="125dp"
         android:layout_below="@+id/registered_final"
-        android:layout_marginLeft="320dp"
-        android:src="@drawable/satyamev"/>
-
-
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="315dp"
+        android:src="@drawable/satyamev"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </RelativeLayout>

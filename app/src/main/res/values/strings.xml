@@ -47,5 +47,8 @@
     <string name="CloseDrawer">Close Drawer</string>
     <string name="user_profile">Your Profile</string>
     <string name="signup">Sign Up</string>
+    <string name="raise_complaint">Raise a Complaint</string>
+    <string name="location">Location</string>
+    <string name="description">Problem Description (if Any):</string>
 
 </resources>

@@ -4,6 +4,7 @@ package com.internshala.jalsahayfinal.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.widget.ViewPager2
@@ -150,6 +151,22 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+    val button1 = findViewById<Button>(R.id.button1)
+    val button2 = findViewById<Button>(R.id.button2)
+    val button3 = findViewById<Button>(R.id.button3)
+    val button4 = findViewById<Button>(R.id.button4)
+    val button5 = findViewById<Button>(R.id.button5)
+
+    // Set up a click listener for each button
+    button1.se
+
+
+private fun showToast(message: String) {
+    Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+}
+
+
+
 
     override fun onDestroy() {
         super.onDestroy()
@@ -157,4 +174,5 @@ class MainActivity : AppCompatActivity() {
         timer.cancel()
     }
 }
+
 

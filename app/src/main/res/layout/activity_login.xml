@@ -12,7 +12,7 @@
         android:layout_width="349dp"
         android:layout_height="303dp"
         android:background="@drawable/border"
-        android:backgroundTint="#5119A5D1"
+        android:backgroundTint="#F2F3F5"
         android:elevation="100dp"
         android:gravity="center_horizontal"
         android:orientation="vertical"
@@ -30,6 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="LOGIN"
+            android:layout_marginTop="10dp"
             android:textSize="34sp"
             android:textStyle="bold" />
 
@@ -63,6 +64,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Login"
+            android:backgroundTint="#59D9DE"
             android:textSize="24sp" />
 
         <TextView
