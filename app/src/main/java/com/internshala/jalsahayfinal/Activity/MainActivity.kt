@@ -18,6 +18,7 @@ import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import com.internshala.jalsahayfinal.Adapter.CarouselAdapter
 import com.internshala.jalsahayfinal.R
+import com.internshala.jalsahayfinal.R.id.radioGroup
 import org.json.JSONObject
 import java.util.Timer
 import java.util.TimerTask
@@ -55,14 +56,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val radioGroup = findViewById<RadioGroup>(R.id.radioGroup)
-        radioGroup.setOnCheckedChangeListener { _, checkedId ->
-            val selectedRadioButton = findViewById<RadioButton>(checkedId)
-            showToast("Selected Option: ${selectedRadioButton.text}")
-        }
-        private fun showToast(message: String) {
-            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
-        }
+
+
 
 
 
@@ -159,15 +154,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
-
-
     }
-
-
-
-
-
-
 
     override fun onDestroy() {
         super.onDestroy()
