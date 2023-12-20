@@ -92,14 +92,15 @@
                 android:layout_marginLeft="75dp"/>
 
             <TextView
+                android:id="@+id/reportText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toEndOf="@id/cameraButton"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="315dp"
+                android:layout_toEndOf="@id/cameraButton"
                 android:text="@string/report_problem"
-                android:textSize="20sp"
                 android:textColor="@color/black"
-                android:layout_marginTop="315dp"/>
+                android:textSize="20sp" />
 
             <!-- Complaints Text Box -->
             <RelativeLayout

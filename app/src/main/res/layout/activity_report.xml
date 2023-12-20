@@ -58,12 +58,12 @@
         android:id="@+id/location"
         android:layout_width="250dp"
         android:layout_height="30dp"
-        android:text="@string/location"
-        android:background="@drawable/box_background"
-        android:layout_marginLeft="16dp"
-        android:inputType="textMultiLine"
         android:layout_below="@id/clickedPic"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/box_background"
+        android:inputType="textMultiLine"
+        android:text="@string/location" />
 
     <TextView
         android:id="@+id/description"
@@ -112,8 +112,8 @@
         android:id="@+id/reportProb"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="580dp"
         android:text="Report Problem"
-      android:layout_marginLeft="50dp"
-        android:textSize="24sp"/>
+        android:textSize="24sp" />
 </RelativeLayout>
