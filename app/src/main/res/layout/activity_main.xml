@@ -182,180 +182,180 @@
 
             </RelativeLayout>
 
-            <!-- Footer Section -->
-<!--            <RelativeLayout-->
-<!--                android:id="@+id/footer"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginBottom="5dp"-->
-<!--                android:orientation="horizontal"-->
-<!--                android:layout_below="@id/buttonsRow2"-->
-<!--                android:layout_alignParentBottom="true">-->
+<!--             Footer Section -->
+            <RelativeLayout
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/buttonsRow2"
+                android:layout_alignParentBottom="true">
 
-<!--                &lt;!&ndash; Home Icon &ndash;&gt;-->
-<!--                <Button-->
-<!--                    android:id="@+id/btnHome"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:drawableTop="@drawable/ic_action_name_home"-->
-<!--                    android:text="Home"-->
-<!--                    android:textSize="12sp"-->
-<!--                  android:backgroundTint="@color/white"-->
-<!--                    android:layout_weight="1"-->
-<!--                    android:gravity="center"-->
-<!--                    android:textColor="@color/black"/>-->
+                <!-- Home Icon -->
+                <Button
+                    android:id="@+id/btnHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_action_name_home"
+                    android:text="Home"
+                    android:textSize="12sp"
+                  android:backgroundTint="@color/white"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
 
-<!--                <Button-->
-<!--                    android:id="@+id/btnContact"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_weight="1"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:layout_toEndOf="@+id/btnHome"-->
-<!--                    android:backgroundTint="@color/white"-->
-<!--                    android:drawableTop="@drawable/ic_action_name_contact"-->
-<!--                    android:gravity="center"-->
-<!--                    android:text="@string/help"-->
-<!--                    android:textColor="@color/black"-->
-<!--                    android:textSize="12sp" />-->
+                <Button
+                    android:id="@+id/btnContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:layout_toEndOf="@+id/btnHome"
+                    android:backgroundTint="@color/white"
+                    android:drawableTop="@drawable/ic_action_name_contact"
+                    android:gravity="center"
+                    android:text="@string/help"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
 
-<!--                <Button-->
-<!--                    android:id="@+id/btnMap"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:drawableTop="@drawable/ic_action_name_map"-->
-<!--                    android:text="@string/map"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:textSize="12sp"-->
-<!--                    android:layout_toEndOf="@id/btnContact"-->
-<!--                    android:layout_weight="1"-->
-<!--                    android:backgroundTint="@color/white"-->
-<!--                    android:gravity="center"-->
-<!--                    android:textColor="@color/black"/>-->
+                <Button
+                    android:id="@+id/btnMap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_action_name_map"
+                    android:text="@string/map"
+                    android:layout_marginStart="16dp"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@id/btnContact"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
 
-<!--                &lt;!&ndash; Profile Icon &ndash;&gt;-->
-<!--                <Button-->
-<!--                    android:id="@+id/btnProfile"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:drawableTop="@drawable/ic_action_name_profile"-->
-<!--                    android:text="@string/profile"-->
-<!--                    android:textSize="12sp"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:layout_toEndOf="@id/btnMap"-->
-<!--                    android:layout_weight="1"-->
-<!--                    android:gravity="center"-->
-<!--                    android:backgroundTint="@color/white"-->
-<!--                    android:textColor="@color/black"/>-->
+                <!-- Profile Icon -->
+                <Button
+                    android:id="@+id/btnProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_action_name_profile"
+                    android:text="@string/profile"
+                    android:textSize="12sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_toEndOf="@id/btnMap"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black"/>
 
 
-<!--            </RelativeLayout>-->
+            </RelativeLayout>
 
 
             <!-- Footer layout -->
-            <RelativeLayout
-                android:id="@+id/footerLayout"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_alignParentBottom="true"
-                android:background="#CCCCCC"
-                android:padding="16dp">
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/footerLayout"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:background="#CCCCCC"-->
+<!--                android:padding="16dp">-->
 
-                <!-- Button 1 -->
-                <RelativeLayout
-                    android:id="@+id/btnHome"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginEnd="8dp">
+<!--                &lt;!&ndash; Button 1 &ndash;&gt;-->
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/btnHome"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_marginEnd="8dp">-->
 
-                    <!-- Icon for Button 1 -->
-                    <ImageView
-                        android:layout_width="45dp"
-                        android:layout_height="45dp"
-                        android:src="@drawable/ic_action_name_home" />
+<!--                    &lt;!&ndash; Icon for Button 1 &ndash;&gt;-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="45dp"-->
+<!--                        android:layout_height="45dp"-->
+<!--                        android:src="@drawable/ic_action_name_home" />-->
 
-                    <!-- Name for Button 1 -->
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/btnHome"
-                        android:text="Button 1"
-                        android:layout_centerHorizontal="true"/>
-                </RelativeLayout>
+<!--                    &lt;!&ndash; Name for Button 1 &ndash;&gt;-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@id/btnHome"-->
+<!--                        android:text="Button 1"-->
+<!--                        android:layout_centerHorizontal="true"/>-->
+<!--                </RelativeLayout>-->
 
-                <!-- Button 2 -->
-                <RelativeLayout
-                    android:id="@+id/button2"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginEnd="8dp"
-                    android:layout_toEndOf="@id/button1">
+<!--                &lt;!&ndash; Button 2 &ndash;&gt;-->
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/button2"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_marginEnd="8dp"-->
+<!--                    android:layout_toEndOf="@id/button1">-->
 
-                    <!-- Icon for Button 2 -->
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:src="@drawable/ic_button2" />
+<!--                    &lt;!&ndash; Icon for Button 2 &ndash;&gt;-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="48dp"-->
+<!--                        android:layout_height="48dp"-->
+<!--                        android:src="@drawable/ic_button2" />-->
 
-                    <!-- Name for Button 2 -->
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/button2"
-                        android:text="Button 2"
-                        android:layout_centerHorizontal="true"/>
-                </RelativeLayout>
+<!--                    &lt;!&ndash; Name for Button 2 &ndash;&gt;-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@id/button2"-->
+<!--                        android:text="Button 2"-->
+<!--                        android:layout_centerHorizontal="true"/>-->
+<!--                </RelativeLayout>-->
 
-                <!-- Button 3 -->
-                <RelativeLayout
-                    android:id="@+id/button3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginEnd="8dp"
-                    android:layout_toEndOf="@id/button2">
+<!--                &lt;!&ndash; Button 3 &ndash;&gt;-->
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/button3"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_marginEnd="8dp"-->
+<!--                    android:layout_toEndOf="@id/button2">-->
 
-                    <!-- Icon for Button 3 -->
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:src="@drawable/ic_button3" />
+<!--                    &lt;!&ndash; Icon for Button 3 &ndash;&gt;-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="48dp"-->
+<!--                        android:layout_height="48dp"-->
+<!--                        android:src="@drawable/ic_button3" />-->
 
-                    <!-- Name for Button 3 -->
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/button3"
-                        android:text="Button 3"
-                        android:layout_centerHorizontal="true"/>
-                </RelativeLayout>
+<!--                    &lt;!&ndash; Name for Button 3 &ndash;&gt;-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@id/button3"-->
+<!--                        android:text="Button 3"-->
+<!--                        android:layout_centerHorizontal="true"/>-->
+<!--                </RelativeLayout>-->
 
-                <!-- Button 4 -->
-                <RelativeLayout
-                    android:id="@+id/button4"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_toEndOf="@id/button3">
+<!--                &lt;!&ndash; Button 4 &ndash;&gt;-->
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/button4"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_toEndOf="@id/button3">-->
 
-                    <!-- Icon for Button 4 -->
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:src="@drawable/ic_button4" />
+<!--                    &lt;!&ndash; Icon for Button 4 &ndash;&gt;-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="48dp"-->
+<!--                        android:layout_height="48dp"-->
+<!--                        android:src="@drawable/ic_button4" />-->
 
-                    <!-- Name for Button 4 -->
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/button4"
-                        android:text="Button 4"
-                        android:layout_centerHorizontal="true"/>
-                </RelativeLayout>
+<!--                    &lt;!&ndash; Name for Button 4 &ndash;&gt;-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@id/button4"-->
+<!--                        android:text="Button 4"-->
+<!--                        android:layout_centerHorizontal="true"/>-->
+<!--                </RelativeLayout>-->
 
-            </RelativeLayout>
+<!--            </RelativeLayout>-->
         </RelativeLayout>
 <!--    </ScrollView>-->
 </RelativeLayout>
